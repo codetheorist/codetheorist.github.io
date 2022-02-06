@@ -19,6 +19,26 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/terms-of-service",
+    name: "Tos",
+    component: () => import(/* webpackChunkName: "tos" */ "../views/Tos.vue"),
+  },
+  {
+    path: "/privacy-policy",
+    name: "PrivacyPolicy",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/PrivacyPolicy.vue"),
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+  },
 ];
 
 const router = new VueRouter({

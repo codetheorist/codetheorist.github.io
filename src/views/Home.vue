@@ -3,9 +3,9 @@
 </template>
 
 <script>
-import Vue from "vue";
+  import Vue from "vue";
 
-export default Vue.extend({
-  name: "Home",
-});
+  export default Vue.extend({
+    name: "Home"
+  });
 </script>

@@ -1,10 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <b-navbar>
+      <b-navbar-brand>CodeTheorist</b-navbar-brand>
+      <b-navbar-nav>
+        <b-nav-item to="/" exact exact-active-class="text-success"
+          >Home</b-nav-item
+        >
+        <b-nav-item :to="{ name: 'About' }" active-class="text-success"
+          >About</b-nav-item
+        >
+      </b-navbar-nav>
+    </b-navbar>
+    <div style="min-height: calc(100vh - 6rem)">
+      <router-view />
     </div>
-    <router-view />
+    <b-nav align="center">
+      <b-nav-item :to="{ name: 'Tos' }">Terms of Service</b-nav-item>
+      <b-nav-item :to="{ name: 'PrivacyPolicy' }">Privacy Policy</b-nav-item>
+      <b-nav-item :to="{ name: 'Contact' }">Contact</b-nav-item>
+    </b-nav>
   </div>
 </template>
 

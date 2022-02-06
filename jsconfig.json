@@ -1,0 +1,13 @@
+{
+  "esversion": 9,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", ".github", ".vscode", "dist", "scripts"]
+}

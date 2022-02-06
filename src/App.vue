@@ -14,14 +14,11 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <div style="min-height: calc(100vh - 6rem)">
+    <div style="min-height: calc(100vh - 3.5rem)">
       <router-view />
     </div>
-    <b-nav class="justify-content-center">
-      <b-nav-item
-        v-if="false"
-        :to="{ name: 'Contact' }"
-        link-classes="text-dark"
+    <b-nav v-if="false" class="justify-content-center">
+      <b-nav-item :to="{ name: 'Contact' }" link-classes="text-dark"
         >Contact</b-nav-item
       >
     </b-nav>

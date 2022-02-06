@@ -18,13 +18,10 @@
       <router-view />
     </div>
     <b-nav class="justify-content-center">
-      <b-nav-item :to="{ name: 'Tos' }" link-classes="text-dark"
-        >Terms<span class="d-none d-sm-inline"> of Service</span></b-nav-item
-      >
-      <b-nav-item :to="{ name: 'PrivacyPolicy' }" link-classes="text-dark"
-        >Privacy<span class="d-none d-sm-inline"> Policy</span></b-nav-item
-      >
-      <b-nav-item :to="{ name: 'Contact' }" link-classes="text-dark"
+      <b-nav-item
+        v-if="false"
+        :to="{ name: 'Contact' }"
+        link-classes="text-dark"
         >Contact</b-nav-item
       >
     </b-nav>

@@ -1,5 +1,9 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<script lang="ts">
+  import Vue, { VNode, CreateElement } from "vue";
+
+  export default Vue.extend({
+    render(h: CreateElement): VNode {
+      return h("h1", "About CodeTheorist");
+    }
+  });
+</script>

@@ -1,11 +1,9 @@
-<template>
-  <div class="home">Home</div>
-</template>
-
-<script>
-  import Vue from "vue";
+<script lang="ts">
+  import Vue, { VNode, CreateElement } from "vue";
 
   export default Vue.extend({
-    name: "Home"
+    render(h: CreateElement): VNode {
+      return h("h1", "Homepage");
+    }
   });
 </script>
